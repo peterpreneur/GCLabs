@@ -16,6 +16,7 @@ public class Lab2 {
             int num = scan.nextInt();
             scan.nextLine();
 
+            //if (num % 2 != 0) {
             if (num % 2 == 1) {
                 if (num > 60) {
                     System.out.println(num + " is Odd and over 60");
@@ -29,7 +30,6 @@ public class Lab2 {
             } else {
                 System.out.println(num + " is Even and greater than 60.");
             }
-
             System.out.println("Continue? (y/n): ");
             cont = scan.nextLine().toUpperCase();
         } while (cont.equals("Y"));
