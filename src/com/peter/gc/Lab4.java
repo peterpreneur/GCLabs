@@ -7,10 +7,11 @@ import java.util.Scanner;
  */
 public class Lab4 {
     public static void main(String[] args) {
-        String cont, text = "";
+        String cont;
         long fact = 1;
         int num;
         Scanner scan = new Scanner(System.in);
+        StringBuffer text = new StringBuffer();
 
         do {
             System.out.println("Enter an integer between 1 to 10: ");
@@ -22,9 +23,11 @@ public class Lab4 {
             } else {
                 for (int i = 1; i <= num; i++) {
                     if (i == 1) {
-                        text = String.valueOf(i);
+                        //text = String.valueOf(i);
+                        text.append(String.valueOf(i));
                     } else {
-                        text = text + " x " + i;
+                        //text = text + " x " + String.valueOf(i);
+                        text.append(" x " + String.valueOf(i));
                     }
                     fact = fact * i;
                     System.out.printf("%-50s", (i + "!" + "= " + text));
