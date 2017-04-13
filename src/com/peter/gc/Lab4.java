@@ -7,28 +7,29 @@ import java.util.Scanner;
  */
 public class Lab4 {
     public static void main(String[] args) {
-        String cont;
+        String cont, text = "";
+        long fact = 1;
+        int num;
+        Scanner scan = new Scanner(System.in);
 
         do {
-            System.out.println("Enter an integer between 1 to 100: ");
-
-            Scanner scan = new Scanner(System.in);
-            int num = scan.nextInt();
+            System.out.println("Enter an integer between 1 to 10: ");
+            num = scan.nextInt();
             scan.nextLine();
 
-            //if (num % 2 != 0) {
-            if (num % 2 == 1) {
-                if (num > 60) {
-                    System.out.println(num + " is Odd and over 60");
-                } else {
-                    System.out.println(num + " is an Odd number.");
-                }
-            } else if (num >= 2 && num <= 25) {
-                System.out.println(num + " is Even and less than 25.");
-            } else if (num >= 26 && num <= 60) {
-                System.out.println(num + " is Even.");
+            if (num < 1 || num > 10) {
+                System.out.println("Input needs to be between 1 to 10");
             } else {
-                System.out.println(num + " is Even and greater than 60.");
+                for (int i = 1; i <= num; i++) {
+                    if (i == 1) {
+                        text = String.valueOf(i);
+                    } else {
+                        text = text + " x " + i;
+                    }
+                    fact = fact * i;
+                    System.out.printf("%-50s", (i + "!" + "= " + text));
+                    System.out.printf("%s %-10d \n", " which equals ", fact);
+                }
             }
             System.out.println("Continue? (y/n): ");
             cont = scan.nextLine().toUpperCase();
