@@ -12,9 +12,6 @@ public class Lab5 {
         String cont;
 
         do {
-            //public static void main(String[] args) {
-            String roll;
-            long fact = 1;
             Scanner scan = new Scanner(System.in);
 
             //ask user to enter the # of sides for a pair of dice
@@ -23,8 +20,11 @@ public class Lab5 {
 
             //prompt user to roll the dice
             System.out.println("Press any key to roll the dice.");
+            cont = scan.nextLine();
+
             scan.nextLine();
 
+            //diplay output
             for(int i=1;i<=2;i++){
                 System.out.println(randNum(num));
             }
