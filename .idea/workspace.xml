@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab52286-d451-4daa-b637-125b708ae134" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GCLabs/com/peter/gc/Lab6.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GCLabs/com/peter/gc/Lab5.class" afterPath="$PROJECT_DIR$/out/production/GCLabs/com/peter/gc/Lab5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peter/gc/Lab4.java" afterPath="$PROJECT_DIR$/src/com/peter/gc/Lab4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peter/gc/Lab5.java" afterPath="$PROJECT_DIR$/src/com/peter/gc/Lab5.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peter/gc/Lab6.java" afterPath="$PROJECT_DIR$/src/com/peter/gc/Lab6.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,40 +14,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Lab6.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/peter/gc/Lab6.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lab4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/peter/gc/Lab4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38853">
-              <caret line="1502" column="0" lean-forward="false" selection-start-line="1502" selection-start-column="0" selection-end-line="1502" selection-end-column="0" />
-              <folding>
-                <element signature="e#58518#58519#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -682,12 +644,12 @@
       <workItem from="1492174748675" duration="5861000" />
       <workItem from="1492360827591" duration="5538000" />
       <workItem from="1492433989182" duration="2455000" />
-      <workItem from="1492437124859" duration="1845000" />
+      <workItem from="1492437124859" duration="2535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41721000" />
+    <option name="totallyTimeSpent" value="42411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -993,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/peter/gc/Lab6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="297">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -27,11 +27,13 @@ public class Lab6 {
                 for (int i = 0; i < 5; i++) {
                     int vowPos = text.indexOf(vowel[i]);
 
-                    if ((flg == 0)&& (vowPos != -1) ) {
-                        fstPos = vowPos;
-                        flg = 1;
-                    } else if ((flg == 1) && (vowPos != -1) && (vowPos < fstPos)) {
-                        fstPos = vowPos;
+                    if ((vowPos != -1) ) {
+                        if ((flg == 0)) {
+                            fstPos = vowPos;
+                            flg = 1;
+                        } else if (vowPos < fstPos) {
+                            fstPos = vowPos;
+                        }
                     }
                 }
                 text = text.substring(fstPos, text.length()) + "ay";
@@ -41,8 +43,7 @@ public class Lab6 {
 
             //ask user if she wants to translate another word.
             System.out.println("Translate another word? (y/n): ");
-            cont = scan.nextLine().toUpperCase();
-        } while (cont.equals("Y"));
-
+            cont = scan.nextLine();
+        } while (cont.equalsIgnoreCase("Y"));
     }
 }
