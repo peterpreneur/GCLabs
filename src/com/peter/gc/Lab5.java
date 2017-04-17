@@ -9,14 +9,13 @@ import java.util.Scanner;
 
 public class Lab5 {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         String cont;
 
         do {
-            Scanner scan = new Scanner(System.in);
-
             //ask user to enter the # of sides for a pair of dice
             System.out.println("How many sides should each die have?");
-            int num = scan.nextInt();
+            int userInput = scan.nextInt();
 
             //prompt user to roll the dice
             System.out.println("Press any key to roll the dice.");
@@ -26,7 +25,7 @@ public class Lab5 {
 
             //diplay output
             for(int i=1;i<=2;i++){
-                System.out.println(randNum(num));
+                System.out.println(randNum(userInput));
             }
 
             System.out.println("Roll again? (y/n): ");
@@ -34,9 +33,9 @@ public class Lab5 {
         } while (cont.equals("Y"));
     }
 
-    public static int randNum(int numSides) {
+        public static int randNum(int numDice) {
         //generate random int
         Random rand = new Random();
-        return rand.nextInt(numSides) + 1;
+        return rand.nextInt(numDice) + 1;
     }
 }

@@ -36,6 +36,7 @@ public class Lab4 {
             }
             System.out.println("Continue? (y/n): ");
             cont = scan.nextLine().toUpperCase();
-        } while (cont.equals("Y"));
+        } while (cont.equals
+                ("Y"));
     }
 }
