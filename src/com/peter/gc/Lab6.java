@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Lab6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String cont, text;
+        String cont = "n", text;
 
         do {
             //prompt the us`    er for a word.
@@ -36,14 +36,18 @@ public class Lab6 {
                         }
                     }
                 }
-                text = text.substring(fstPos, text.length()) + "ay";
+                text = text.substring(fstPos, text.length()) + text.substring(0, fstPos) + "ay";
             }
-
             System.out.println(text);
 
-            //ask user if she wants to translate another word.
-            System.out.println("Translate another word? (y/n): ");
-            cont = scan.nextLine();
+            try {
+                //ask user if she wants to translate another word.
+                System.out.println("Translate another word? (y/n): ");
+                cont = scan.nextLine();
+            }
+            catch(Exception e){
+                System.out.println("You enter an invalid character.");
+            }
         } while (cont.equalsIgnoreCase("Y"));
     }
 }
