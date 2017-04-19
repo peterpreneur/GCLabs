@@ -17,7 +17,7 @@ public class Lab8 {
 
         do {
             System.out.print("Enter number of times at bat: ");
-            int numBats = scan.nextInt();
+ n           int numBats = scan.nextInt();
             int[] numBatsArr = new int[numBats];
 
             System.out.println("0=out, 1=single, 2=double, 3=triple, 4=home run");
@@ -43,12 +43,13 @@ public class Lab8 {
                 }
             }
 
+            //Outputs
             System.out.println("numBats: " + numBats);
             System.out.println("cntOnBase: " +  cntOnBase);
             System.out.println("totalBases: " + totalBases);
 
-            System.out.println ("Batting average: " + calcAvg ( numBats, cntOnBase ));
-            System.out.println("Slugging percentage: " + calcPct (numBats, totalBases) );
+            System.out.println ("Batting average (cntOnBase/numBats): " + calcAvg ( numBats, cntOnBase ));
+            System.out.println("Slugging percentage (totNumOfBases/numBats): " + calcPct (numBats, totalBases));
 
             scan.nextLine();
             System.out.println("Another batter? (y/n): ");
@@ -59,11 +60,11 @@ public class Lab8 {
 
     //Methods to calculate batting average
     public static double calcAvg(int numBats, int cntOnBase) {
-        return (cntOnBase/numBats);
+        return ((double)cntOnBase/numBats);
     }
 
     //Methods to calculate slugging percentage
     public static double calcPct(int numBats,int totNumOfBases) {
-        return (totNumOfBases/numBats);g
+        return ((double)totNumOfBases/numBats);
     }
 }
