@@ -22,7 +22,7 @@ public class Lab8 {
 
             System.out.println("0=out, 1=single, 2=double, 3=triple, 4=home run");
             for (int i = 0; i < numBats; i++) {
-                System.out.print("Result for at bat " + i + ": ");
+                System.out.println("Result for at bat " + i + ": ");
                 int inpInt= scan.nextInt();
 
                 //Validate input so user can only enter positive integers
@@ -31,36 +31,39 @@ public class Lab8 {
                     inpInt = scan.nextInt();
                 }
                 numBatsArr[i] = inpInt;
-                System.out.println(numBatsArr[i]);
 
                 //Add total bases
                 totalBases += numBatsArr[i];
-                System.out.println(totalBases);
+                //System.out.println("totalBases: " + totalBases);
 
                 //Count number of bats on base
                 if (numBatsArr[i] > 0){
                     cntOnBase ++;
-                    System.out.println(cntOnBase);
+                    //System.out.println(cntOnBase);
                 }
             }
 
-            System.out.println("Batting average: " + calcAvg(numBats,cntOnBase));
-            System.out.println("Slugging percentage: " + calcPct(numBats, totalBases));
+            System.out.println("numBats: " + numBats);
+            System.out.println("cntOnBase: " +  cntOnBase);
+            System.out.println("totalBases: " + totalBases);
+
+            System.out.println ("Batting average: " + calcAvg ( numBats, cntOnBase ));
+            System.out.println("Slugging percentage: " + calcPct (numBats, totalBases) );
 
             scan.nextLine();
             System.out.println("Another batter? (y/n): ");
             cont = scan.nextLine();
         }while(cont.equalsIgnoreCase("y"));
+        System.out.println ("Goodbye!");
     }
 
     //Methods to calculate batting average
-    public static float calcAvg(int numBats, int cntOnBase) {
+    public static double calcAvg(int numBats, int cntOnBase) {
         return (cntOnBase/numBats);
     }
 
     //Methods to calculate slugging percentage
-    public static float calcPct(int numBats,int totNumOfBases) {
-        return (totNumOfBases/numBats);
+    public static double calcPct(int numBats,int totNumOfBases) {
+        return (totNumOfBases/numBats);g
     }
-
 }
