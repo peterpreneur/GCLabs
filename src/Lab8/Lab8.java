@@ -1,4 +1,4 @@
-package com.peter.gc;
+package Lab8;
 
 import java.util.Scanner;
 
@@ -17,20 +17,22 @@ public class Lab8 {
 
         do {
             System.out.print("Enter number of times at bat: ");
- n           int numBats = scan.nextInt();
+            int numBats = scan.nextInt();
+            //Set array size
             int[] numBatsArr = new int[numBats];
 
             System.out.println("0=out, 1=single, 2=double, 3=triple, 4=home run");
+            //Loop to enter result at bat
             for (int i = 0; i < numBats; i++) {
                 System.out.println("Result for at bat " + i + ": ");
                 int inpInt= scan.nextInt();
 
-                //Validate input so user can only enter positive integers
-                while ((inpInt < 0) && (inpInt > 4)){
-                    System.out.print("Please re-enter number between 0-4 :");
-                    inpInt = scan.nextInt();
-                }
-                numBatsArr[i] = inpInt;
+                    //Validate input so user can only enter positive integers
+                    while ((inpInt < 0) && (inpInt > 4)){
+                        System.out.print("Please re-enter number between 0-4 :");
+                        inpInt = scan.nextInt();
+                    }
+                    numBatsArr[i] = inpInt;
 
                 //Add total bases
                 totalBases += numBatsArr[i];

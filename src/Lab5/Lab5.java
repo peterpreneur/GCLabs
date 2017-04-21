@@ -1,4 +1,4 @@
-package com.peter.gc;
+package Lab5;
 
 import java.util.Random;
 import java.util.Scanner;

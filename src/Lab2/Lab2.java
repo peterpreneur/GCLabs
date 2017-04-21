@@ -1,4 +1,5 @@
-package com.peter.gc;
+package Lab2;
+
 
 import java.util.Scanner;
 

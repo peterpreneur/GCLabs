@@ -1,4 +1,4 @@
-package com.peter.gc;
+package Lab3;
 
 import java.util.Scanner;
 
