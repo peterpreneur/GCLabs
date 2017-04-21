@@ -1,7 +1,5 @@
 package Assess2;
 
-import com.peter.gc.Lab1;
-
 /**
  * Created by PAS8 on 4/19/2017.
  * Assessment 2, Part 2, No 1.
