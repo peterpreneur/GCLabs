@@ -29,7 +29,7 @@ public class Roshambo {
     }
 
     //This is a main method
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
         //Sample basic Roshambo outputting value
         for (RoshamboEnum rVal : RoshamboEnum.values ()) {
             System.out.println ( "toString = " + rVal.toString () );
@@ -45,5 +45,5 @@ public class Roshambo {
         for (RoshamboEnumChar rChar : RoshamboEnumChar.values ()) {
             System.out.println ( "Letter = " + rChar.letter );
         }
-    }
+    //}
 }
