@@ -2,41 +2,26 @@ package Lab12;
 
 /**
  * Created by PAS8 on 4/21/2017.
- * Create enumeration called RoshamboEnum
  */
-public class Roshambo {
-    public enum RoshamboEnum {
-        ROCK, PAPER, SCISSORS
+public class Roshambo123 {
+
+    //Roshambo123 enum outputting numeric
+    public enum RoshamboEnumNum {
+        ROCK ( 1 ), PAPER ( 2 ), SCISSORS ( 3 );
+        private int num;
+
+        //This is a constructor
+        RoshamboEnumNum(int num) {
+            this.num = num;
+        }
     }
 
-    @Override
-    public String toString() {
-        return "Roshambo{}";
+
+    public static void main(String[] args) {
+        System.out.println (RoshamboEnumNum.values ());
     }
 }
 
-////Roshambo123 enum outputting numeric
-//public enum RoshamboEnumNum {
-//    ROCK ( 1 ), PAPER ( 2 ), SCISSORS ( 3 );
-//    private int num;
-//
-//    //This is a constructor
-//    RoshamboEnumNum(int num) {
-//        this.num = num;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "RoshamboEnumNum{" + "num=" + num + '}';
-//    }
-//}
-//
-//    public static void main(String[] args) {
-//        for (RoshamboEnumNum r : RoshamboEnumNum.values ()) {
-//            System.out.println ( "Number = " + r.num );
-//            System.out.println ( "toString = " + r.toString () );
-//        }
-//    }
 
 //This is a main method
 //Basic Roshambo123 enum

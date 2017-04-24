@@ -9,6 +9,9 @@
       <file url="file://$PROJECT_DIR$/src/Misc/UsedCar.java" />
       <file url="file://$PROJECT_DIR$/src/Misc/Person.java" />
       <file url="file://$PROJECT_DIR$/src/Lab11/CarLotApp.java" />
+      <file url="file://$PROJECT_DIR$/src/Lab12/Roshambo123.java" />
+      <file url="file://$PROJECT_DIR$/src/Lab12/Random.java" />
+      <file url="file://$PROJECT_DIR$/src/Lab12/Rock.java" />
     </excludeFromCompile>
   </component>
 </project>

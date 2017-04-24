@@ -6,16 +6,16 @@ import java.util.Scanner;
  * Created by PAS8 on 4/21/2017.
  */
 public abstract class Player {
-    //Create an abstract class name Player that stores a name and Roshambo value
+
+    //Create an abstract class name Player that stores a name and Roshambo123 value
     private String name;
-    private int roshamboValue;
+    private String roshamboVal;
 
-    //Abstract method that allows sub-class to generate and return a Roshambo value
-    public abstract void generateRoshambo(int roshamboValue);
+    public abstract void setName();
+    public abstract void setRoshamboVal();
 
-    public void askRPSSelection() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println ("Rock, paper, or scissors? (R/P/S): ");
-        scan.nextInt();
+    public void run(){
+        setName ();
+        setRoshamboVal ();
     }
 }
