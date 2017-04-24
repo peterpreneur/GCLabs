@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * Created by PAS8 on 4/21/2017.
  * Lab12 : Create a rock, paper, scissors game.
+ * IN PROGRESS
  */
 public class Main {
     public static void main(String[] args) {

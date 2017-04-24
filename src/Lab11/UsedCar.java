@@ -1,6 +1,7 @@
 package Lab11;
 /**
  * Created by PAS8 on 4/21/2017.
+ * IN PROGRESS
  */
 public class UsedCar extends Car {
     private double mileage;
