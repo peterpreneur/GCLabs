@@ -13,6 +13,7 @@ public class CarLotApp {
 
 
     //Display car
+
     public void displayCar(int Position){
         System.out.println("Contents of carlist: "+ carList);
     }
