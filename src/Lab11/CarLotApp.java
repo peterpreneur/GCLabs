@@ -10,6 +10,8 @@ public class CarLotApp {
 
     ArrayList<Car> carList = new ArrayList<>();
 
+
+
     //Display car
     public void displayCar(int Position){
         System.out.println("Contents of carlist: "+ carList);
